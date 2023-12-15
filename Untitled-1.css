@@ -1,0 +1,144 @@
+
+        :root {
+        --orange:#D1884F;
+        --blue:#008AAA;
+        --Darkblue :#3BBADB;
+        --black:#000000
+        } 
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 100%;
+        }
+        .ul{
+            display: flex;
+             justify-content: flex-end;
+            padding: 10px;
+            color: var(--black);
+        }
+        li{
+            padding: 12px;
+        }
+        .first{
+            color: var(--orange);
+        }
+        a {
+        text-decoration: none;
+            padding: 10px;
+        }
+        .hero{
+            width:100%;
+            display:  flex;
+            padding:0 auto ;
+        }
+        .art{
+            
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        h3{            
+            color: var(--Darkblue);
+            margin: 0px;
+        }
+        h2{
+            color: var(--blue);
+            margin: 2;
+        }
+        .sap{
+            color: var(--orange);
+        }
+        .see{
+            color: var(--blue);
+        }
+        button{
+            margin: 10px;
+            border-radius: 5px 5px;
+        }
+        .butt{ 
+            font-size: 17px;
+            background-color: var(--blue);
+            color: aliceblue;
+            border: var(--Darkblue);
+        }
+        .butto{
+            border: 1px solid var(--blue);
+            font-size: 15px;
+            color: var(--Darkblue);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            border-bottom-left-radius: 60%;
+        }
+        .image-conainer{
+            float: left;
+            position: relative;
+        }
+
+            .img1, .img2{
+            width: 200px;
+            height: 200px;
+        }
+            .img1 {
+            height: 180px ;
+            } 
+            .img1 {
+            position: absolute;
+            left: -10px;
+            top: 18px;
+            z-index: -1;
+            }
+            
+        
+        @media screen and (max-width: 480px) {
+            .hero {
+                padding: 5px 10px;
+            }
+            .image-conainer {
+                width: 30%;
+            }
+            .img1, .img2 {
+                width:  160px;
+                height: 160px;
+            }
+            .img1 {
+                height: 155px;
+                top: 5px;
+            }
+            .artic h2 {
+                font-size: 15px;
+                
+            }
+            .image-conainer {
+                margin-top: 100px;
+            }
+    }
+    @media only screen and (max-width: 768px) {
+        .hero {
+            padding: 5px 10px;
+        }
+        .image-conainer{
+            width: 30%;
+        }
+        .img1, .img2 {
+            width:  160px;
+            height: 160px;
+        }
+        .img1 {
+            height: 155px;
+            top: 5px;
+        }
+        .artic h2 {
+            font-size: 15px;
+            
+        }
+        .image-conainer {
+            margin-top: 100px;
+        }
+    }
